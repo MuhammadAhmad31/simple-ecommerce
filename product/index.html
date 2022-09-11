@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+
+    <!-- Library Font Awesome -->
+    <!-- Untuk icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PRODUCTS - Simple Ecommerce</title>
+
+    <!-- Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="message">
+        <div class="chat fa-brands fa-square-whatsapp" onclick="chat()"></div>
+    </div>
+    <div class="icon-up">
+        <a href="#navbar-list" class="icon fa-sharp fa-solid fa-caret-up"></a>
+    </div>
+
+    <header>
+        <nav>
+            <ul id="navbar-list" class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <span class="nav-icon fa fa-home"></span>
+                        <span class="nav-text">HOME</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../product/index.html" class="nav-link">
+                        <span class="nav-icon fa fa-cart-plus"></span>
+                        <span class="nav-text">PRODUCTS</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../category/index.html" class=" nav-link">
+                        <span class="nav-icon fa fa-list"></span>
+                        <span class="nav-text">CATEGORY</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact/index.html" class="nav-link">
+                        <span class="nav-icon fa fa-contact-card"></span>
+                        <span class="nav-text">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Section Page - Product List -->
+        <div class="container">
+            <h2 class="title">Product List</h2>
+            <!-- Row / Baris -->
+            <div class="row">
+                <!-- Column / Kolom -->
+                <h3 id="title-man" class="title-man">MAN</h3>
+                <div class="product-man">
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-1.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Kaos Lebaran</h4>
+                                <p>Rp. 120.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('kaos lebaran', 120000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-2.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Sepatu Lebaran</h4>
+                                <p>Rp. 100.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Sepatu Lebaran', 120000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-3.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Celana Lebaran</h4>
+                                <p>Rp. 150.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Celana Lebaran', 150000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-4.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Kaos Jumatan</h4>
+                                <p>Rp. 200.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Kaos Jumatan', 200000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-5.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Sepatu jumatan</h4>
+                                <p>Rp. 130.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Sepatu Jumatan', 130000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-6.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Kaos Lari</h4>
+                                <p>Rp. 90.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Kaos Lari', 90000)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title-man" id="title-girl">GIRL</h3>
+                <div class="product-girl">
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-7.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Kaos Kaki Lari</h4>
+                                <p>Rp. 40.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Kaos Kaki lari', 40000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-8.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Jam Tangan 1</h4>
+                                <p>Rp. 400.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Jam Tangan 1', 400000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-9.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Jam Tangan 2</h4>
+                                <p>Rp. 350.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Jam Tangan 2', 350000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-10.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Sepatu Lari</h4>
+                                <p>Rp. 180.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Sepatu Lari', 180000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-11.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Sepatu Casual</h4>
+                                <p>Rp. 160.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Sepatu Casual', 160000)"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img">
+                            <img src="../assets/images/product-12.jpg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <div class="product-content-main">
+                                <h4>Celana Lari</h4>
+                                <p>Rp. 120.000</p>
+                            </div>
+                            <span class="product-buy-icon fa-solid fa-cart-shopping"
+                                onclick="buy('Celana Lari', 120000)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae optio minima, eius itaque hic omnis eveniet ipsam fugit quaerat dolorum.</p>
+                <div class="footer-medsos">
+                    <div class="instagram">
+                        <a href=""><span class="fa-brands fa-instagram"></span></a>
+                    </div>
+                    <div class="facebook">
+                        <a href=""><span class="fa-brands fa-facebook"></span></a>
+                    </div>
+                    <div class="youtube">
+                        <a href=""><span class="fa-brands fa-youtube"></span></a>
+                    </div>
+                    <div class="twitter">
+                        <a href=""><span class="fa-brands fa-twitter"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Prices Drop</a></li>
+                        <li><a href="#">New Products</a></li>
+                        <li><a href="#">Best Sales</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-our-company">
+                <h3>Our Company</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Secure Payment</a></li> 
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <div class="location">
+                    <span class="fa-solid fa-map-location-dot"></span>
+                    <p> Jln. Jend. Soedirman 010 Sleman, Daerah Istimewa Yogyakarta (DIY), Indonesia</p>
+                </div>
+                <div class="no-telp">
+                    <span class="fa-solid fa-phone"></span>
+                    <a href="tel:+6282244187495"><p> (+62) 822 4418 7495</p></a>
+                </div>
+                <div class="no-telp">
+                    <span class="fa-solid fa-envelope"></span>
+                    <a href="mailto:ahmadsilva7@gmail.com"><p> muhshop@gmail.com</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <img src="../assets/images/payment.png" alt="">
+            <p>Copyright <span id="year"></span>. <span>MUH</span>SHOP</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="../assets/source.js"></script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>

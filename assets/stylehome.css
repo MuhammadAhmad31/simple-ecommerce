@@ -46,7 +46,10 @@ input.search {
 input.button {
     padding: 10px;
     height: 40px;
+    width: 60px;
     border-radius: 12px;
+    background-color: tomato;
+    color: white;
 }
 
 .hero-img {
@@ -96,6 +99,43 @@ input.button {
     margin-left: 100px;
 }
 
+.parts {    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 90%;
+    height: 80px;
+}
+.part {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.part-img img {
+    height: 80%;
+    margin-top: 6px;
+}
+
+.part-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part-content h3 {
+    font-size: 0.9em;
+}
+.part-content a {
+    text-decoration: none;
+    color: tomato;
+    font-size: 0.9em;
+}
 
 @media screen and (max-width: 1260px) {
     .hero-content {
@@ -103,6 +143,12 @@ input.button {
     }
 }
 
+@media screen and (max-width:985px) {
+    .part-content h3, a {
+        font-size: 0.8em;
+    }
+
+}
 @media screen and (max-width: 903px) {
     .hero-content {
         width: 70%;
@@ -113,6 +159,54 @@ input.button {
     .hero-img p {
         padding-top: 50px;
     }
+
+}
+
+@media screen and (max-width: 722px) {
+    .part-img {
+        margin-top: 2px;
+        height: 80%;
+    }
+
+    .part-content h3 {
+        font-size: 0.7em;
+    }
+
+    .part-content a {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 555px) {
+
+    .part {
+        overflow: hidden;
+    }
+
+    .part-content {
+        margin-top: -1000px;
+    }
+
+    .part-img {
+        margin-left: 40px;
+    }
+
+    .part:nth-child(3) .part-img{
+        margin-top: 4px;
+        margin-left: 54px;
+    }
+
+    .part:hover {
+        background-color: tomato;
+    }
+    
+    .part:hover .part-content a {
+        color: white;
+    }
+    
+    .part:hover .part-content h3 {
+        color: white;
+    }
 }
 
 @media screen and (max-width: 487px){ 
@@ -120,16 +214,21 @@ input.button {
         margin-top: 0px;
         background-color: rgb(10, 10, 10);
     }
-    
+
     section {
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 455px) {
+    .hero-content {
+        margin-top: 30px;
+    }
+
     .hero-img p {
         padding-top: 20px;
     }
+
     .hero-content{
         width: 90%;
     }
